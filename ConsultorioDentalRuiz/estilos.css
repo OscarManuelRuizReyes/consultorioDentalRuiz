@@ -1,0 +1,549 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    overflow: hidden ;
+}
+
+
+.nav{
+    background: #13455E;
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    width:100%;
+    height:70px;
+    margin:auto;
+    align-items: center;
+
+}
+
+label{
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav ul li {
+    list-style: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    padding: 28px;
+    color: #fff;
+    transition: .5s all ease;
+}
+
+.nav ul li a:hover{
+    color: black;
+    background: #fff;
+    cursor: pointer;
+}
+
+#ham_menu{
+    display: none;
+}
+
+.ham_menu_bar{
+    font-size:22px;
+    display: none;
+}
+
+
+/* .placeholder{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+} */
+
+ /* main */
+
+ .nosotros{
+    width: 100%;
+    padding: 78px 0px;
+    background-color: #191919;
+}
+
+.nosotros img{
+    height: auto;
+    width: 420px;
+}
+
+.texto-nosotros{
+    width: 550px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texto-nosotros h1{
+    color: white;
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.texto-nosotros h5{
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.texto-nosotros p{
+    margin-left: 20px;
+}
+
+span{
+    color:yellow;
+}
+
+.texto-nosotros p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin-bottom: 45px;
+}
+
+.nosotros button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding:  13px 30px;
+    border-radius: 20px;
+    transition: all .3s;
+    margin-left: 25%;
+}
+
+.nosotros button:hover{
+    transform: scale(1.2);
+}
+
+
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background-color: #3044a5;
+    color: white;
+}
+
+.foot-cont{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-gap: 40px;
+}
+
+.foot-cont .sec h2{
+    position: relative;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.foot-cont .sec h2::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #ffeb3b;
+}
+
+.sci{
+   margin-top: 20px;
+   display: grid;
+   grid-template-columns: repeat(4, 50px);
+   grid-gap: 10px;
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: #3e56cb;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sci li a .fa-brands{
+    color: white;
+    font-size: 20px;
+}
+
+.quicklinks{
+    position: relative;
+
+}
+
+.quicklinks li{
+    list-style: none;
+}
+
+.quicklinks li a{
+    color: #f9f9f9;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quicklinks li a:hover{
+    color: #ffeb3b;
+}
+
+.info{
+    position: relative;
+}
+
+.info li{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+
+.info li span:nth-child(1){
+    color: white;
+    font-size: 20px;
+}
+
+.info li span{
+    color: white;
+}
+
+.info a{
+    color:  #f7f7f7;
+    text-decoration: none;
+}
+
+.info a:hover{
+    color: #ffeb3b;
+}
+
+.copyrightText{
+    background-color: #1f3389;
+    padding: 8px 100px;
+    text-align: center;
+    color: white;
+}
+
+
+
+.call-to-action{
+    background-color: rgba(15, 55, 75, .8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.call-to-action .texto{
+text-align: center;
+}
+
+.imagen-promocion img{
+    padding: 50px;
+    height: 400px;
+    width: auto;
+}
+
+
+.call-to-action .texto h2{
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* margin-top: -40px; */
+}
+
+.container img {
+    height: 80px;
+    width: auto;
+    margin: 20px 10px;
+}
+
+.servicio-impar, .servicio-par{
+    width: 20%;
+}
+.servicio-impar{
+    background-color: #3A7B81;
+}
+
+.servicio-impar p, .servicio-par p{
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+.servicio-par{
+    background-color: #0F374B;
+    color: white;
+}
+
+.text-bienv{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+.descripcion-cons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.certificaciones{
+    text-align: center;
+    padding: 20px;
+    background-color: #E5E5E5;
+}
+
+/**
+.revision{
+    width: 100%;
+    background-color: #0D374C;
+    color: white;
+}
+
+
+*/
+.testimonios {
+    background-image: url("imgs/fondoCancun.jpg");
+    background-size: cover;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+.testimonios-tit{
+    font-size: 40px;    
+    text-align: center;
+    margin: 20px 0;
+}
+.contenedor-testimonios{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contenedor-testimonios .caja{
+    position: relative;
+    width: 320px;
+    background: white;
+    padding: 100px 40px 60px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .30);
+}
+
+.contenedor-testimonios .caja h2, .contenedor-testimonios .caja h3, .contenedor-testimonios .caja p{
+    margin-bottom: 40px;
+}
+
+
+.horas-de-trabajo {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.horas-de-trabajo h2{
+    padding: 20px;
+    font-size: 30px;
+}
+table {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:960px){
+    .ham_menu_bar{
+        display: block;
+        z-index:10;
+    }
+
+    .nav ul{
+        display: grid;
+        position: fixed;
+        top:70px;
+        height:100vh;
+        background-color:black;
+        width:100%;
+        left:-100%;
+        font-size: 17px;
+        transition: .5s all ease;
+        text-align: center;
+        padding-top:30px;
+    }
+    .nav ul li a{
+        color:white;
+    }
+    .nav ul li a:hover{
+        color:deepskyblue;
+        background-color: black;
+    }
+    #ham_menu:checked~ul{
+        left:0;
+    }
+
+    #ham_menu:checked~.ham_menu_bar i:before{
+        content: "\f00d";
+    }
+
+    footer{
+        padding: 40px;
+    }
+
+    footer .foot-cont{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+
+    .nosotros{
+        padding: 20;
+    }
+    .nosotros img{
+        height: auto;
+        width: 70%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nosotros button{
+        margin-left: 0;
+    }
+
+    .call-to-action{
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .call-to-action img{
+        width: 800px;
+        height: 600px;
+    }
+
+    .call-to-action {
+        line-height: 50px;
+    }
+    section.container{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        flex-direction: column;
+    }
+    .servicio-impar, .servicio-par{
+        width: 100%;
+    }
+
+    .contenedor-testimonios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    .descripcion-cons{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .descripcion-cons h3{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .descripcion-cons p{
+        margin-bottom: 30px;
+        text-align: justify;
+        padding: 10px;
+    }
+
+  
+}
+
+@media only screen and (max-width: 768px){
+    footer .foot-cont{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .call-to-action img{
+        width: 400px;
+        height: 300px;
+    }
+
+    .call-to-action {
+        line-height: 30px;
+    }
+
+    .servicio-impar img, .servicio-par img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .contenedor-testimonios{
+        
+        align-content: center;
+        margin: 20px;
+    }
+
+}
